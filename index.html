@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://kit.fontawesome.com/63c28bf024.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+ 
+<nav class="p-3 flex bg-white justify-between items-center">
+  <a href="#" id="brand" class="flex gap-2 items-center">
+    <img src="./assets/asset 0.png" alt="logo" class="max-w-12 max-h-12 object-cover">
+    <span class="text-lg font-semibold font-display">Todesktop</span>
+  </a>
+    <div id="nav-menu" class="hidden md:flex gap-12">
+      <a href="#" class="font-medium hover:text-primary">Pricing</a>
+      <a href="#" class="font-medium hover:text-primary">Docs</a>
+      <a href="#" class="font-medium hover:text-primary">Changelog</a>
+      <a href="#" class="font-medium hover:text-primary">Blog</a>
+      <a href="#" class="font-medium hover:text-primary">Login</a>
+    </div>
+    <button class="hidden md:flex border gap-2 border-gray-500 px-6 py-2 rounded-lg hover:border-gray-600 items-center">
+      <img src="./assets/asset 1.svg" alt="">
+      <span>Electron Developer</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+  <button class="p-2 md:hidden" onclick="handleMenu()">
+    <i class="fa-solid fa-bars text-gray-600"></i>
+  </button>
+
+  <!-- mobile -->
+ <div id="nav-dialog" class="fixed hidden bg-white inset-0 p-3">
+ <div id="nav-bar" class="flex justify-between">
+    <a href="#" id="brand" class="flex gap-2 items-center">
+    <img src="./assets/asset 0.png" alt="logo" class="max-w-12 max-h-12 object-cover">
+    <span class="text-lg font-semibold font-display">Todesktop</span>
+  </a> 
+   <button class="p-2 md:hidden" onclick="handleMenu()">
+    <i class="fa-solid fa-xmark text-gray-600"></i>
+  </button>
+ </div>   
+  <div class="mt-6">
+    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-300 rounded-md block">Pricing</a>
+    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-300 rounded-md block">Docs</a>
+    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-300 rounded-md block">Changelog</a>
+    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-300 rounded-md block">Blog</a>
+    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-300 rounded-md block">Login</a>
+  </div>
+        <div class="border border-red-700"></div>
+      <button class="mt-4 w-full flex border gap-2 border-gray-500 px-6 py-2 rounded-lg hover:border-gray-600 items-center">
+      <img src="./assets/asset 1.svg" alt="">
+      <span>Electron Developer</span>
+    </button>
+ </div>
+
+</nav>
+
+<!-- main -->
+<main>
+<!-- hero section -->
+  <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-200 via-orange-100 to-transparent">
+    <div id="hero-container" class="max-w-4xl mx-auto pb-32 px-6 flex flex-col sm:items-center sm:text-center">
+      <div id="version-text" class="flex items-center border border-yellow-300 p-2 rounded-lg w-fit 
+        shadow-md hover:shadow-lg  hover:-translate-y-1 transition group my-6 gap-2 bg-yellow-50">
+        <div class="h-2 w-2 bg-yellow-400 rounded-full border border-yellow-600 flex items-center"></div>
+          <p class="font-display text-yellow-800 ">v0.21.1: <span class="font-bold">Find in-page bug fixes</span>
+           <i class="fa-solid fa-arrow-right group-hover:translate-x-1  transition duration-300"></i>
+            </p>
+          </div>
+
+          <h1 class="text-4xl font-semibold leading-snug sm:text-7xl">Web app to desktop app in minutes</h1>
+      <P class="pt-6 text-xl sm:text-2xl">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</P>
+
+      <div id="button-container" class="flex flex-col sm:flex-row gap-3 mt-12">
+        <button class=" px-8 py-3 bg-primary font-semibold p-3 rounded-lg shadow-sm text-white hover:bg-opacity-80 transition">Download Now</button>
+        <button class="px-8 py-3 font-semibold p-3 rounded-lg shadow-sm border border-gray-600 hover:bg-gray-400">Read docs</button>
+      </div>
+    </div>
+        </div>
+        
+    </div>
+
+       
+      
+</main>
+</main>
+ 
+</body>
+
+<script src="script.js"></script>
+</html>
