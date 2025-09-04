@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind</title>
-  <link rel="stylesheet" href="output.css">
+ <link rel="stylesheet" href="output.css">
+
   <script src="https://kit.fontawesome.com/63c28bf024.js" crossorigin="anonymous"></script>
+    
+
     
 </head>
 <body>
  
 <nav class="p-3 flex bg-white justify-between items-center">
-  <a href="#" id="brand" class="flex gap-2 items-center">
+  <a href="#" id="brand" class="flex gap-2 items-center flex-1">
     <img src="./assets/asset 0.png" alt="logo" class="max-w-12 max-h-12 object-cover">
     <span class="text-lg font-semibold font-display">Todesktop</span>
   </a>
@@ -22,11 +25,16 @@
       <a href="#" class="font-medium hover:text-primary">Blog</a>
       <a href="#" class="font-medium hover:text-primary">Login</a>
     </div>
-    <button class="hidden md:flex border gap-2 border-gray-500 px-6 py-2 rounded-lg hover:border-gray-600 items-center">
+
+    <div class="hidden flex-1 md:flex justify-end">
+          <button class="flex border gap-2 border-gray-500 px-6 py-2 rounded-lg hover:border-gray-600
+    items-center">
       <img src="./assets/asset 1.svg" alt="">
       <span>Electron Developer</span>
       <i class="fa-solid fa-arrow-right"></i>
     </button>
+    </div>
+    
 
   <button class="p-2 md:hidden" onclick="handleMenu()">
     <i class="fa-solid fa-bars text-gray-600"></i>
@@ -62,32 +70,56 @@
 <!-- main -->
 <main>
 <!-- hero section -->
-  <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-200 via-orange-100 to-transparent">
-    <div id="hero-container" class="max-w-4xl mx-auto pb-32 px-6 flex flex-col sm:items-center sm:text-center">
+ 
+    <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-200 via-orange-100 to-transparent">
+    <div id="hero-container" class="max-w-4xl lg:max-w-6xl lg:flex-row mx-auto pb-32  pt-6 px-6 flex flex-col 
+    sm:items-center sm:text-center sm:pt-20">
       <div id="version-text" class="flex items-center border border-yellow-300 p-2 rounded-lg w-fit 
-        shadow-md hover:shadow-lg  hover:-translate-y-1 transition group my-6 gap-2 bg-yellow-50">
+        shadow-md hover:shadow-lg hover:-translate-y-1 transition group my-6 gap-2 bg-yellow-50">
         <div class="h-2 w-2 bg-yellow-400 rounded-full border border-yellow-600 flex items-center"></div>
           <p class="font-display text-yellow-800 ">v0.21.1: <span class="font-bold">Find in-page bug fixes</span>
            <i class="fa-solid fa-arrow-right group-hover:translate-x-1  transition duration-300"></i>
             </p>
           </div>
 
-          <h1 class="text-4xl font-semibold leading-snug sm:text-7xl">Web app to desktop app in minutes</h1>
-      <P class="pt-6 text-xl sm:text-2xl">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</P>
+  <!-- Hero Feature Row -->
+<div id="hero-feature" class="hidden md:flex flex-wrap justify-center gap-12 my-6">
+  <div class="flex items-center gap-2 text-gray-600">
+    <i class="fa-regular fa-file-code"></i>
+    <p>Code optional</p>
+  </div>
+  <div class="flex items-center gap-2 text-gray-600">
+    <i class="fa-solid fa-hand-fist"></i>
+    <p>Drag & drop builder</p>
+  </div>
+  <div class="flex items-center gap-2 text-gray-600">
+    <i class="fa-brands fa-windows"></i>
+    <p>Windows, Mac, Linux</p>
+  </div>
+</div>
+
+
+          <h1 class="text-4xl font-semibold leading-snug sm:text-7xl sm:leading-normal mt-4">Web app to desktop app in minutes</h1>
+      <P class="pt-6 text-xl sm:text-2xl m-4 sm:m-8">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</P>
 
       <div id="button-container" class="flex flex-col sm:flex-row gap-3 mt-12">
-        <button class=" px-8 py-3 bg-primary font-semibold p-3 rounded-lg shadow-sm text-white hover:bg-opacity-80 transition">Download Now</button>
+        <button class=" px-8 py-3 bg-primary font-semibold rounded-lg shadow-sm text-white hover:bg-opacity-80 
+        transition">Download Now</button>
         <button class="px-8 py-3 font-semibold p-3 rounded-lg shadow-sm border border-gray-600 hover:bg-gray-400">Read docs</button>
       </div>
-    </div>
-        </div>
-        
-    </div>
+       <div id="companies-title" class="flex justify-center items-center gap-3 mt-12 text-gray-600 text-xl">
+  <img class="transform translate-y-2" src="./assets/asset 2.svg" alt="">
+  <span class="uppercase tracking-wider">Apps powered by Todesktop</span>
+  <img class="transform translate-y-2" src="./assets/asset 2.svg" alt="">
+</div>
 
+   </div>
        
+   </div>
+   
       
 </main>
-</main>
+
  
 </body>
 
