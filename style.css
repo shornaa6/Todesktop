@@ -20,6 +20,9 @@
     .my-container {
         @apply px-6 py-12 lg:py-20 mt-3  max-w-7xl mx-auto ;
     }
+    .gradient-hover-outer{
+        @apply hover:bg-gradient-to-br hover:from-red-100  hover:via-purple-100 hover:to-pink-100;
+    }
 }
 
 
